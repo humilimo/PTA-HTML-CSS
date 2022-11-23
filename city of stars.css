@@ -1,0 +1,117 @@
+#navbar{
+    background: rgba(255, 255, 255, 0.6);
+    position: fixed;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.04);
+    top: 0;
+    left: 0;
+    height: 199px;
+    width: 100%;
+}
+#logonav, #searchbar{
+    display: inline-block;
+    position: absolute;
+}
+section{
+    display: inline-block;
+}
+#logonav{
+    height: 119px;
+    width: 120px;
+    margin-left: 114px;
+    margin-top: 40px;
+}
+#searchbar{
+   border: 0.5px solid rgba(96, 96, 96, 0.3);
+   border-radius: 8px;
+   margin: 69px 0px 69px 876px;
+}
+#pesquisa{
+    width: 450px;
+    height: 61px;
+    border: 0px;
+    background-color: rgba(0,0,0,0);
+    color: rgba(96, 96, 96, 0.6);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24.38px;
+}
+#pesquisa::placeholder{
+  color: rgba(96, 96, 96, 0.6);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24.38px;
+}
+#lupa{
+    height: 20px;
+    width: 20px;
+    margin-left: 16px; 
+    margin-right: 16px; 
+    margin-top: 20.5px;
+}
+#corpo{
+    background-color: #E5E5E5; 
+}
+#foto1{
+    margin-top: 279px;
+    margin-left: 114px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.04);
+    border-radius: 16px;
+    width: 318px;
+    height: 512px;
+}
+#foto1 img{
+    height: 270px;
+    width: 270px;
+    margin-top: 24px;
+}
+#foto2{
+    margin-top: 279px;
+    margin-left: 32px;
+    margin-bottom: 500px;
+    height: 240px;
+    width: 240px;
+}
+#foto2 img{
+    height: 192px;
+    width: 192px;
+}
+#foto3{
+    margin-top: 551px;
+    height: 240px;
+    width: 240px;
+}
+#foto3 img{
+    height: 192px;
+    width: 192px;
+}
+#foto4{
+    margin-left: 736px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.04);
+    border-radius: 16px;
+    width: 318px;
+    height: 512px;
+}
+#foto4 img{
+    height: 270px;
+    width: 270px;   
+}
+#foto5{
+    margin-left: 1086px;
+    height: 240px;
+    width: 240px;
+}
+#foto5 img{
+    height: 192px;
+    width: 192px;
+}
+#foto6{
+    margin-left: 1086px;
+    height: 240px;
+    width: 240px;
+}
+#foto6 img{
+    height: 192px;
+    width: 192px;
+}
