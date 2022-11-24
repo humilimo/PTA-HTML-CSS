@@ -1,18 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    background-color: #FAFAFA; 
+}
+::-webkit-scrollbar {
+    display: none;
+    }
 #navbar{
-    background: rgba(255, 255, 255, 0.6);
-    position: fixed;
-    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.04);
-    top: 0;
-    left: 0;
     height: 199px;
     width: 100%;
-}
-#logonav, #searchbar{
-    display: inline-block;
-    position: absolute;
-}
-section{
-    display: inline-block;
+    left: 0;
+    top: 0;
+    position: fixed;
+    display: flex;
+    background: rgba(255, 255, 255, 0.6);
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.04);
 }
 #logonav{
     height: 119px;
@@ -21,42 +27,63 @@ section{
     margin-top: 40px;
 }
 #searchbar{
-   border: 0.5px solid rgba(96, 96, 96, 0.3);
-   border-radius: 8px;
-   margin: 69px 0px 69px 876px;
+    display: flex;
+    flex-direction: row;
+    height: 61px;
+    width: 450px;
+    margin-left: 642px;
+    margin-top: 69px;
+    background: #FFFFFF;
+    border: 0.5px solid rgba(96, 96, 96, 0.3);
+    border-radius: 8px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    gap: 16px;
 }
 #pesquisa{
-    width: 450px;
+    width: 398px;
     height: 61px;
     border: 0px;
+    padding-top: 18.5px;
+    padding-bottom: 18.5px;
     background-color: rgba(0,0,0,0);
     color: rgba(96, 96, 96, 0.6);
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 24.38px;
+    outline: none;
 }
 #pesquisa::placeholder{
-  color: rgba(96, 96, 96, 0.6);
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 24.38px;
+    padding: 0;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    color: rgba(96, 96, 96, 0.6);
+    flex: none;
+    order: 1;
+    flex-grow: 0;
 }
 #lupa{
     height: 20px;
     width: 20px;
-    margin-left: 16px; 
-    margin-right: 16px; 
+    margin-left: 16px;
     margin-top: 20.5px;
+    margin-bottom: 20.5px;
 }
 #corpo{
-    background-color: #E5E5E5; 
-}
-#foto1{
+    background-color: #FAFAFA; 
+    display: grid;
     margin-top: 279px;
     margin-left: 114px;
-    background: #FFFFFF;
+    margin-right: 114px;
+    margin-bottom: 77.98px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+#foto1{
+    background: rgba(255, 255, 255, 1);
     box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.04);
     border-radius: 16px;
+    grid-area: 1 / 1 / 1 / 1;
     width: 318px;
     height: 512px;
 }
@@ -64,30 +91,98 @@ section{
     height: 270px;
     width: 270px;
     margin-top: 24px;
+    margin-bottom: 31px;
+    margin-left: 24px;
+}
+#foto1 h1{
+    margin-left: 24px;
+    margin-bottom: 8px;
+    margin-top: -4px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 39px;
+    color: #292929;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;    
+}
+#foto1 p{
+    width: 270px;
+    height: 40px;
+    margin-left: 24px;
+    margin-bottom: 31px;
+    margin-top: 0;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #606060;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+.valor{
+    margin-left: 24px;
+    margin-bottom: 24px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 10px;
+    width: 105px;
+    height: 45px;
+    background: rgba(249, 199, 191, 0.5);
+    border-radius: 8px;
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+}
+.valor #cinco{
+    height: 29px;
+    margin: 8px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+}
+.picole1{
+    grid-area: 1 / 2 / 1 / 2;
+    margin-left: 32px;
+    margin-right: 32px;
 }
 #foto2{
-    margin-top: 279px;
-    margin-left: 32px;
-    margin-bottom: 500px;
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.04);
+    border-radius: 16px;
     height: 240px;
     width: 240px;
 }
 #foto2 img{
     height: 192px;
     width: 192px;
+    margin: 24px;
 }
 #foto3{
-    margin-top: 551px;
     height: 240px;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.04);
+    background: rgba(255, 255, 255, 1);
+    border-radius: 16px;
+    margin-top: 272px;
     width: 240px;
 }
 #foto3 img{
     height: 192px;
     width: 192px;
+    margin: 24px;
 }
 #foto4{
-    margin-left: 736px;
     background: #FFFFFF;
+    grid-area: 1 / 3 / 1 / 3;
     box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.04);
     border-radius: 16px;
     width: 318px;
@@ -95,23 +190,129 @@ section{
 }
 #foto4 img{
     height: 270px;
-    width: 270px;   
+    width: 270px;
+    margin-top: 24px;  
+    margin-left: 24px;
+    margin-bottom: 31px; 
+}
+#foto4 h1{
+    margin-left: 24px;
+    margin-bottom: 8px;
+    margin-top: -4px;
+    width: 270px;
+    height: 39px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 39px;
+    color: #292929;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;    
+}
+#foto4 p{
+    width: 270px;
+    height: 40px;
+    margin-left: 24px;
+    margin-bottom: 31px;
+    margin-top: 0;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #606060;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+.valor #tres{
+    width: 89px;
+    height: 29px;
+    margin: 8px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+}
+.picole2{
+    float: right;
+    margin-left: 32px;
+    margin-right: 0;
+    grid-area: 1 / 4 / 1 / 4;
 }
 #foto5{
-    margin-left: 1086px;
     height: 240px;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.04);
+    background: rgba(255, 255, 255, 1);
+    border-radius: 16px;
     width: 240px;
 }
 #foto5 img{
     height: 192px;
     width: 192px;
+    margin: 24px;
 }
 #foto6{
-    margin-left: 1086px;
     height: 240px;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.04);
+    border-radius: 16px;
     width: 240px;
+    background: rgba(255, 255, 255, 1);
+    margin-top: 272px;
 }
 #foto6 img{
     height: 192px;
     width: 192px;
+    margin: 24px;
+}
+footer{
+    display: flex; 
+    flex-direction: row;
+    width: 100%;
+    height: 155.02px;
+    background: rgba(242, 242, 242, 1);
+}
+#socialmedias{
+    display: flex;
+    margin-left: 114px;
+    margin-top: 60.01px;
+}
+#facebook{
+    height: 35px;
+    width: 35px;
+    margin-right: 15px;
+}
+#twitter{
+    height: 35px;
+    width: 35px; 
+}
+#linkedin{
+    height: 35px;
+    width: 35px;
+    margin-right: 15px;
+}
+#logofooter{
+    height: 59.02px;
+    width: 60px;
+    margin-top: 48px;
+    margin-bottom: 48px;
+    margin-left: 441px;
+    margin-right: 323px;
+}
+footer p{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #292929;
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+    margin-top: 69.01px;
 }
