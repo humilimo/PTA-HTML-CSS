@@ -3,316 +3,366 @@
     padding: 0;
     box-sizing: border-box;
 }
+html{
+    font-size: 100%;
+}
 body{
     width: 100%;
-    background-color: #FAFAFA; 
+    background-color: #FAFAFA;
+    font-size: 1rem;
 }
 ::-webkit-scrollbar {
     display: none;
-    }
+}
 #navbar{
-    height: 199px;
+    height: 12.43rem;
     width: 100%;
     left: 0;
     top: 0;
     position: fixed;
     display: flex;
     background: rgba(255, 255, 255, 0.6);
-    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.04);
+    box-shadow: 0rem 0.25rem 1rem rgba(0, 0, 0, 0.04);
+}
+#logoinicial{
+    flex: 1;
 }
 #logonav{
-    height: 119px;
-    width: 120px;
-    margin-left: 114px;
-    margin-top: 40px;
+    height: 7.43rem;
+    width: 7.5rem;
+    margin-left: 7.125rem;
+    margin-top: 2.5rem;
 }
 #searchbar{
     display: flex;
     flex-direction: row;
-    height: 61px;
-    width: 450px;
-    margin-left: 642px;
-    margin-top: 69px;
+    height: 3.8125rem;
+    width: 28.125rem;
+    margin-top: 4.3125rem;
+    margin-right: 114px;
     background: #FFFFFF;
-    border: 0.5px solid rgba(96, 96, 96, 0.3);
-    border-radius: 8px;
-    flex: none;
-    order: 1;
-    flex-grow: 0;
-    gap: 16px;
+    border: 0.03125rem solid rgba(96, 96, 96, 0.3);
+    border-radius: 0.5rem;
 }
-#pesquisa{
-    width: 398px;
-    height: 61px;
-    border: 0px;
-    padding-top: 18.5px;
-    padding-bottom: 18.5px;
+.pesquisa{
+    width: 24.875rem;
+    height: 3.8125rem;
+    border: 0;
     background-color: rgba(0,0,0,0);
     color: rgba(96, 96, 96, 0.6);
     outline: none;
 }
-#pesquisa::placeholder{
-    padding: 0;
+#pesquisahidden{
+    visibility: hidden;
+    position: absolute;
+}
+.pesquisa::placeholder{
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 1.25rem;
     color: rgba(96, 96, 96, 0.6);
     flex: none;
     order: 1;
     flex-grow: 0;
 }
 #lupa{
-    height: 20px;
-    width: 20px;
-    margin-left: 16px;
-    margin-top: 20.5px;
-    margin-bottom: 20.5px;
+    height: 1.25rem;
+    width: 1.25rem;
+    margin: 1.28125rem 1rem;
 }
 #corpo{
     background-color: #FAFAFA; 
-    display: grid;
-    margin-top: 279px;
-    margin-left: 114px;
-    margin-right: 114px;
-    margin-bottom: 77.98px;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
+    max-width: 75.75rem;
+    display: flex;
+    margin: 17.4375rem auto 4.87375rem;
 }
 #foto1{
     background: rgba(255, 255, 255, 1);
-    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.04);
-    border-radius: 16px;
-    grid-area: 1 / 1 / 1 / 1;
-    width: 318px;
-    height: 512px;
+    box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.04);
+    border-radius: 1rem;
+    width: 19.875rem;
+    height: 32rem;
 }
 #foto1 img{
-    height: 270px;
-    width: 270px;
-    margin-top: 24px;
-    margin-bottom: 31px;
-    margin-left: 24px;
+    height: 16.875rem;
+    width: 16.875rem;
+    margin: 1.5rem 0 1.9375rem 1.5rem;
 }
 #foto1 h1{
-    margin-left: 24px;
-    margin-bottom: 8px;
-    margin-top: -4px;
+    margin: -0.25rem 0 0.5rem 1.5rem;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
-    font-size: 32px;
-    line-height: 39px;
+    font-size: 2rem;
+    line-height: 2.4375rem;
     color: #292929;
     flex: none;
     order: 0;
     align-self: stretch;
-    flex-grow: 0;    
+    flex-grow: 0;
 }
 #foto1 p{
-    width: 270px;
-    height: 40px;
-    margin-left: 24px;
-    margin-bottom: 31px;
-    margin-top: 0;
+    width: 16.875rem;
+    height: 2.5rem;
+    margin: 0 0 1.9375rem 1.5rem;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     color: #606060;
     flex: none;
-    order: 1;
     flex-grow: 0;
 }
 .valor{
-    margin-left: 24px;
-    margin-bottom: 24px;
+    margin-left: 1.5rem;
+    margin-bottom: 1.5rem;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    gap: 10px;
-    width: 105px;
-    height: 45px;
+    width: 6.5625rem;
+    height: 2.8125rem;
     background: rgba(249, 199, 191, 0.5);
-    border-radius: 8px;
+    border-radius: 0.5rem;
     flex: none;
-    order: 2;
     flex-grow: 0;
 }
 .valor #cinco{
-    height: 29px;
-    margin: 8px;
+    height: 1.8125rem;
+    margin: 0.5rem;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
-    font-size: 24px;
-    line-height: 29px;
+    font-size: 1.5rem;
+    line-height: 1.8125rem;
     color: #000000;
 }
 .picole1{
-    grid-area: 1 / 2 / 1 / 2;
-    margin-left: 32px;
-    margin-right: 32px;
+    margin-left: 2rem;
+    margin-right: 2rem;
 }
 #foto2{
     background: rgba(255, 255, 255, 1);
-    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.04);
-    border-radius: 16px;
-    height: 240px;
-    width: 240px;
+    box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.04);
+    border-radius: 1rem;
+    height: 15rem;
+    width: 15rem;
 }
 #foto2 img{
-    height: 192px;
-    width: 192px;
-    margin: 24px;
+    height: 12rem;
+    width: 12rem;
+    margin: 1.5rem;
 }
 #foto3{
-    height: 240px;
-    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.04);
+    height: 15rem;
+    box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.04);
     background: rgba(255, 255, 255, 1);
-    border-radius: 16px;
-    margin-top: 272px;
-    width: 240px;
+    border-radius: 1rem;
+    margin-top: 2rem;
+    width: 15rem;
 }
 #foto3 img{
-    height: 192px;
-    width: 192px;
-    margin: 24px;
+    height: 12rem;
+    width: 12rem;
+    margin: 1.5rem;
 }
 #foto4{
     background: #FFFFFF;
-    grid-area: 1 / 3 / 1 / 3;
-    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.04);
-    border-radius: 16px;
-    width: 318px;
-    height: 512px;
+    box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.04);
+    border-radius: 1rem;
+    width: 19.875rem;
+    height: 32rem;
 }
 #foto4 img{
-    height: 270px;
-    width: 270px;
-    margin-top: 24px;  
-    margin-left: 24px;
-    margin-bottom: 31px; 
+    height: 16.875rem;
+    width: 16.875rem;
+    margin-top: 1.5rem;  
+    margin-left: 1.5rem;
+    margin-bottom: 1.9375rem; 
 }
 #foto4 h1{
-    margin-left: 24px;
-    margin-bottom: 8px;
-    margin-top: -4px;
-    width: 270px;
-    height: 39px;
+    margin-left: 1.5rem;
+    margin-bottom: 0.5rem;
+    margin-top: -0.25rem;
+    width: 16.875rem;
+    height: 2.4375rem;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
-    font-size: 32px;
-    line-height: 39px;
+    font-size: 2rem;
+    line-height: 2.4375rem;
     color: #292929;
     flex: none;
-    order: 0;
     align-self: stretch;
     flex-grow: 0;    
 }
 #foto4 p{
-    width: 270px;
-    height: 40px;
-    margin-left: 24px;
-    margin-bottom: 31px;
+    width: 16.875rem;
+    height: 2.5rem;
+    margin-left: 1.5rem;
+    margin-bottom: 1.9375rem;
     margin-top: 0;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     color: #606060;
     flex: none;
-    order: 1;
     flex-grow: 0;
 }
 .valor #tres{
-    width: 89px;
-    height: 29px;
-    margin: 8px;
+    width: 5.5625rem;
+    height: 1.8125rem;
+    margin: 0.5rem;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
-    font-size: 24px;
-    line-height: 29px;
+    font-size: 1.5rem;
+    line-height: 1.8125rem;
     color: #000000;
 }
 .picole2{
-    float: right;
-    margin-left: 32px;
-    margin-right: 0;
-    grid-area: 1 / 4 / 1 / 4;
+    margin-left: 2rem;
 }
 #foto5{
-    height: 240px;
-    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.04);
+    height: 15rem;
+    box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.04);
     background: rgba(255, 255, 255, 1);
-    border-radius: 16px;
-    width: 240px;
+    border-radius: 1rem;
+    width: 15rem;
 }
 #foto5 img{
-    height: 192px;
-    width: 192px;
-    margin: 24px;
+    height: 12rem;
+    width: 12rem;
+    margin: 1.5rem;
 }
 #foto6{
-    height: 240px;
-    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.04);
-    border-radius: 16px;
-    width: 240px;
+    height: 15rem;
+    box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.04);
+    border-radius: 1rem;
+    width: 15rem;
     background: rgba(255, 255, 255, 1);
-    margin-top: 272px;
+    margin-top: 2rem;
 }
 #foto6 img{
-    height: 192px;
-    width: 192px;
-    margin: 24px;
+    height: 12rem;
+    width: 12rem;
+    margin: 1.5rem;
 }
 footer{
     display: flex; 
     flex-direction: row;
     width: 100%;
-    height: 155.02px;
+    height: 9.68875rem;
     background: rgba(242, 242, 242, 1);
 }
 #socialmedias{
     display: flex;
-    margin-left: 114px;
-    margin-top: 60.01px;
+    margin-left: 7.125rem;
+    margin-top: 3.750625rem;
+}
+.redes{
+    height: 2.1875rem;
+    width: 2.1875rem;
 }
 #facebook{
-    height: 35px;
-    width: 35px;
-    margin-right: 15px;
-}
-#twitter{
-    height: 35px;
-    width: 35px; 
+    margin-right: 0.9375rem;
 }
 #linkedin{
-    height: 35px;
-    width: 35px;
-    margin-right: 15px;
+    margin-right: 0.9375rem;
+}
+#lastlogo{
+    flex: 1;
 }
 #logofooter{
-    height: 59.02px;
-    width: 60px;
-    margin-top: 48px;
-    margin-bottom: 48px;
-    margin-left: 441px;
-    margin-right: 323px;
+    height: 3.68875rem;
+    width: 3.75rem;
+    margin: 3rem 46.016%;
 }
 footer p{
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 17px;
+    font-size: 0.875rem;
+    line-height: 1.0625rem;
     color: #292929;
     flex: none;
     order: 2;
     flex-grow: 0;
-    margin-top: 69.01px;
+    margin-top: 4.313125rem;
+    margin-right: 7.125rem;
+}
+@media(max-width: 1212px){
+    html{
+        font-size: 8.840888px;
+    }
+    #corpo{
+        flex-wrap:wrap;
+        max-width: 326px;
+    }
+    #navbar{
+        height: 129.42px;
+    }
+    #logonav{
+        height: 69.42px;
+        width: 70px;
+        margin-left: 32px;
+        margin-top: 40px;
+    }
+    #searchbar{
+        width: 40px;
+        height: 40px;
+        margin-top: 54.71px;
+        margin-right: 32px;
+    }
+    .pesquisa{
+        visibility: hidden;
+    }
+    #pesquisahidden{
+        visibility: visible;       
+        position: absolute;
+        right: 32px;
+        width: 40px;
+    }
+    /* #pesquisa::placeholder{
+        display: none;
+    } */
+    #lupa{
+        margin: 13.31px;
+        width: 13.37px;
+        height: 13.37px;
+    }
+    .picole1{
+        margin-left: 17.68px;
+        margin-right: 0;
+    }
+    .picole2{
+        margin-left: 0;
+        margin-right: 17.68px;
+        margin-top: 18px;
+    }
+    #foto4{
+        order: 1;
+        margin-top: 18px;
+    }
+    footer{
+        flex-direction: column;
+        height: 128px;
+    }
+    .redes{
+        height: 25px;
+        width: 25px;
+    }
+    #socialmedias{
+        margin: 32px auto 24px; 
+    }
+    #lastlogo{
+        display: none;
+    }
+    footer p {
+        margin: 0 auto;
+        font-size: 12px;
+    }
 }
